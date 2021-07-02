@@ -1,5 +1,14 @@
+import java.util.Scanner;
+
 public class ex4 {
     public static void main(String[] args){
+
+        System.out.println("What is your name?");
+
+        Scanner scan = new Scanner(System.in);
+        String name = scan.nextLine();
+        System.out.println("Hello, " + name + "!");
+
         System.out.println("Rolling the dice...");
 
         int die1 = (int) (Math.random() * 6) + 1;
@@ -11,5 +20,8 @@ public class ex4 {
         int sum = die1 + die2;
 
         System.out.println("Total value: " + sum);
+
+        if(sum > 7) System.out.println("You won");
+        else System.out.println("You lost");
     }
 }
