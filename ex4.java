@@ -21,7 +21,7 @@ public class ex4 {
 
         System.out.println("Total value: " + sum);
 
-        if(sum > 7) System.out.println("You won");
-        else System.out.println("You lost");
+        if(sum > 7) System.out.println(name + " won");
+        else System.out.println(name +  " lost");
     }
 }
