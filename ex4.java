@@ -1,5 +1,14 @@
+import java.util.Scanner;
+
 public class ex4 {
     public static void main(String[] args){
+
+        System.out.println("What is your name?");
+
+        Scanner scan = new Scanner(System.in);
+        String name = scan.nextLine();
+        System.out.println("Hello, " + name + "!");
+
         System.out.println("Rolling the dice...");
 
         int die1 = (int) (Math.random() * 6) + 1;
